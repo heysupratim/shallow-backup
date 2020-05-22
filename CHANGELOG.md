@@ -1,7 +1,101 @@
-# Changelog
+# Change Log
+
+## [v5.0.1](https://github.com/alichtman/shallow-backup/tree/v5.0.1) (2020-05-14)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v5.0.0a...v5.0.1)
+
+**Merged pull requests:**
+
+- Bump version to 5.0.1 [\#278](https://github.com/alichtman/shallow-backup/pull/278) ([alichtman](https://github.com/alichtman))
+
+## [v5.0.0a](https://github.com/alichtman/shallow-backup/tree/v5.0.0a) (2020-05-13)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v4.0.4...v5.0.0a)
+
+**Fixed bugs:**
+
+- Setting backup path to ~/.shallow\_backup breaks subsequent runs [\#265](https://github.com/alichtman/shallow-backup/issues/265)
+- shutil.SameFileError shallow-backup.conf [\#260](https://github.com/alichtman/shallow-backup/issues/260)
+
+**Closed issues:**
+
+- Add `--dry\_run` key to not actually copy any files on backup or reinstall [\#274](https://github.com/alichtman/shallow-backup/issues/274)
+- Cannot interactively set backup path to existing backup repo [\#266](https://github.com/alichtman/shallow-backup/issues/266)
+- Add tests for adding paths to config [\#249](https://github.com/alichtman/shallow-backup/issues/249)
+- Run Travis on both Mac and Linux [\#197](https://github.com/alichtman/shallow-backup/issues/197)
+
+**Merged pull requests:**
+
+- Standardize flags [\#276](https://github.com/alichtman/shallow-backup/pull/276) ([alichtman](https://github.com/alichtman))
+- Add -dry\_run flag [\#275](https://github.com/alichtman/shallow-backup/pull/275) ([alichtman](https://github.com/alichtman))
+- Add conditional backup and reinstallation [\#272](https://github.com/alichtman/shallow-backup/pull/272) ([alichtman](https://github.com/alichtman))
+- Refactor [\#271](https://github.com/alichtman/shallow-backup/pull/271) ([alichtman](https://github.com/alichtman))
+- Be clear that changing backup path moves the folder [\#268](https://github.com/alichtman/shallow-backup/pull/268) ([ThatsJustCheesy](https://github.com/ThatsJustCheesy))
+- Allow setting backup path to ~/.shallow-backup [\#267](https://github.com/alichtman/shallow-backup/pull/267) ([ThatsJustCheesy](https://github.com/ThatsJustCheesy))
+- Fix default config creation [\#258](https://github.com/alichtman/shallow-backup/pull/258) ([alichtman](https://github.com/alichtman))
+
+## [v4.0.4](https://github.com/alichtman/shallow-backup/tree/v4.0.4) (2020-03-29)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v4.0.3...v4.0.4)
+
+**Fixed bugs:**
+
+- FileNotFoundError: ~/shallow-backup/dotfiles/.gitignore [\#257](https://github.com/alichtman/shallow-backup/issues/257)
+
+**Merged pull requests:**
+
+- Create dotfiles dir before creating .gitignore [\#259](https://github.com/alichtman/shallow-backup/pull/259) ([alichtman](https://github.com/alichtman))
+
+## [v4.0.3](https://github.com/alichtman/shallow-backup/tree/v4.0.3) (2020-03-26)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v4.0.2...v4.0.3)
+
+## [v4.0.2](https://github.com/alichtman/shallow-backup/tree/v4.0.2) (2020-03-25)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v4.0.1...v4.0.2)
+
+**Merged pull requests:**
+
+- Follow symlinks and avoid PermissionError when reinstalling .git repos [\#256](https://github.com/alichtman/shallow-backup/pull/256) ([alichtman](https://github.com/alichtman))
+
+## [v4.0.1](https://github.com/alichtman/shallow-backup/tree/v4.0.1) (2020-03-25)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v4.0...v4.0.1)
+
+**Merged pull requests:**
+
+- Correctly exclude files on reinstallation and add tests [\#255](https://github.com/alichtman/shallow-backup/pull/255) ([alichtman](https://github.com/alichtman))
+- Avoid reinstalling img/ and README from dotfiles [\#254](https://github.com/alichtman/shallow-backup/pull/254) ([alichtman](https://github.com/alichtman))
+
+## [v4.0](https://github.com/alichtman/shallow-backup/tree/v4.0) (2020-03-22)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v3.4...v4.0)
+
+**Closed issues:**
+
+- Interface for selecting which dotfiles to back up [\#228](https://github.com/alichtman/shallow-backup/issues/228)
+- Use symlinking instead of copying [\#188](https://github.com/alichtman/shallow-backup/issues/188)
+
+**Merged pull requests:**
+
+- Carefully reinstall .git and .gitignore files [\#251](https://github.com/alichtman/shallow-backup/pull/251) ([alichtman](https://github.com/alichtman))
+
+## [v3.4](https://github.com/alichtman/shallow-backup/tree/v3.4) (2020-03-22)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v3.3...v3.4)
+
+## [v3.3](https://github.com/alichtman/shallow-backup/tree/v3.3) (2020-03-21)
+[Full Changelog](https://github.com/alichtman/shallow-backup/compare/v3.2...v3.3)
+
+**Fixed bugs:**
+
+- Error when reinstalling all [\#216](https://github.com/alichtman/shallow-backup/issues/216)
+- copytree\(\) doesn't overwrite, so reinstall sometimes fails [\#209](https://github.com/alichtman/shallow-backup/issues/209)
+
+**Closed issues:**
+
+- Add `--add` flag for adding new paths to be backed up [\#247](https://github.com/alichtman/shallow-backup/issues/247)
+- Add Support for Hammerspoon dotfolder [\#244](https://github.com/alichtman/shallow-backup/issues/244)
+
+**Merged pull requests:**
+
+- Refactor --add option and bump to v3.3 [\#250](https://github.com/alichtman/shallow-backup/pull/250) ([alichtman](https://github.com/alichtman))
+- Add CLI option for adding paths to config [\#248](https://github.com/alichtman/shallow-backup/pull/248) ([alichtman](https://github.com/alichtman))
+- Fix IsADirectory error upon reinstallation [\#246](https://github.com/alichtman/shallow-backup/pull/246) ([alichtman](https://github.com/alichtman))
 
 ## [v3.2](https://github.com/alichtman/shallow-backup/tree/v3.2) (2019-11-17)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v3.1...v3.2)
 
 **Merged pull requests:**
@@ -9,7 +103,6 @@
 - Move config to ~/.config/shallow-backup.conf [\#242](https://github.com/alichtman/shallow-backup/pull/242) ([alichtman](https://github.com/alichtman))
 
 ## [v3.1](https://github.com/alichtman/shallow-backup/tree/v3.1) (2019-11-15)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v2.8...v3.1)
 
 **Closed issues:**
@@ -23,7 +116,6 @@
 - Fix tests [\#238](https://github.com/alichtman/shallow-backup/pull/238) ([alichtman](https://github.com/alichtman))
 
 ## [v2.8](https://github.com/alichtman/shallow-backup/tree/v2.8) (2019-10-16)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v2.7...v2.8)
 
 **Closed issues:**
@@ -31,7 +123,6 @@
 - Unable to run macOS [\#235](https://github.com/alichtman/shallow-backup/issues/235)
 
 ## [v2.7](https://github.com/alichtman/shallow-backup/tree/v2.7) (2019-10-08)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v2.6...v2.7)
 
 **Fixed bugs:**
@@ -43,12 +134,11 @@
 - Config syntax error handling [\#234](https://github.com/alichtman/shallow-backup/pull/234) ([alichtman](https://github.com/alichtman))
 
 ## [v2.6](https://github.com/alichtman/shallow-backup/tree/v2.6) (2019-09-23)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v2.4...v2.6)
 
 **Fixed bugs:**
 
-- Can't back up dotfiles that live outside of the $HOME directory [\#230](https://github.com/alichtman/shallow-backup/issues/230)
+- Can't back up dotfiles that don't live directly inside $HOME [\#230](https://github.com/alichtman/shallow-backup/issues/230)
 - Double check git commit logic [\#227](https://github.com/alichtman/shallow-backup/issues/227)
 
 **Closed issues:**
@@ -59,9 +149,9 @@
 
 - Patch failing commit behavior when submodules are present [\#232](https://github.com/alichtman/shallow-backup/pull/232) ([alichtman](https://github.com/alichtman))
 - Allow backing up dotfiles outside of $HOME [\#231](https://github.com/alichtman/shallow-backup/pull/231) ([alichtman](https://github.com/alichtman))
+- Better reinstallation options and better scripting support [\#147](https://github.com/alichtman/shallow-backup/pull/147) ([alichtman](https://github.com/alichtman))
 
 ## [v2.4](https://github.com/alichtman/shallow-backup/tree/v2.4) (2019-05-12)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v2.3...v2.4)
 
 **Fixed bugs:**
@@ -80,7 +170,6 @@
 - No such file or directory during fonts backup [\#217](https://github.com/alichtman/shallow-backup/pull/217) ([robbixc](https://github.com/robbixc))
 
 ## [v2.3](https://github.com/alichtman/shallow-backup/tree/v2.3) (2019-01-07)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v2.2...v2.3)
 
 **Fixed bugs:**
@@ -99,9 +188,9 @@
 **Merged pull requests:**
 
 - Exception handling [\#207](https://github.com/alichtman/shallow-backup/pull/207) ([bl0nd](https://github.com/bl0nd))
+- Added VSCode settings and extensions backup/reinstall, pip3 backup. [\#205](https://github.com/alichtman/shallow-backup/pull/205) ([AlexanderProd](https://github.com/AlexanderProd))
 
 ## [v2.2](https://github.com/alichtman/shallow-backup/tree/v2.2) (2018-12-14)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v2.1...v2.2)
 
 **Fixed bugs:**
@@ -131,7 +220,6 @@
 - \#200 added gitpython to setup.py [\#201](https://github.com/alichtman/shallow-backup/pull/201) ([AlexanderProd](https://github.com/AlexanderProd))
 
 ## [v2.1](https://github.com/alichtman/shallow-backup/tree/v2.1) (2018-11-14)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v2.0...v2.1)
 
 **Fixed bugs:**
@@ -144,11 +232,9 @@
 
 **Merged pull requests:**
 
-- Added VSCode settings and extensions backup/reinstall, pip3 backup. [\#205](https://github.com/alichtman/shallow-backup/pull/205) ([AlexanderProd](https://github.com/AlexanderProd))
 - Add test for backups. [\#191](https://github.com/alichtman/shallow-backup/pull/191) ([alichtman](https://github.com/alichtman))
 
 ## [v2.0](https://github.com/alichtman/shallow-backup/tree/v2.0) (2018-11-09)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v1.3...v2.0)
 
 **Fixed bugs:**
@@ -238,7 +324,6 @@
 - Prettify CLI help menu [\#153](https://github.com/alichtman/shallow-backup/pull/153) ([alichtman](https://github.com/alichtman))
 - Fix font reinstallation [\#151](https://github.com/alichtman/shallow-backup/pull/151) ([alichtman](https://github.com/alichtman))
 - Pkg mgr printing [\#149](https://github.com/alichtman/shallow-backup/pull/149) ([alichtman](https://github.com/alichtman))
-- Better reinstallation options and better scripting support [\#147](https://github.com/alichtman/shallow-backup/pull/147) ([alichtman](https://github.com/alichtman))
 - Fix travis [\#143](https://github.com/alichtman/shallow-backup/pull/143) ([alichtman](https://github.com/alichtman))
 - Refactoring and Reorganization [\#139](https://github.com/alichtman/shallow-backup/pull/139) ([alichtman](https://github.com/alichtman))
 - Readme [\#134](https://github.com/alichtman/shallow-backup/pull/134) ([alichtman](https://github.com/alichtman))
@@ -267,11 +352,9 @@
 - Add -configs mode. [\#63](https://github.com/alichtman/shallow-backup/pull/63) ([schilli91](https://github.com/schilli91))
 
 ## [v1.3](https://github.com/alichtman/shallow-backup/tree/v1.3) (2018-05-30)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v1.2...v1.3)
 
 ## [v1.2](https://github.com/alichtman/shallow-backup/tree/v1.2) (2018-05-30)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v1.0...v1.2)
 
 **Fixed bugs:**
@@ -299,7 +382,6 @@
 - Clean up empty package list files [\#50](https://github.com/alichtman/shallow-backup/pull/50) ([alichtman](https://github.com/alichtman))
 
 ## [v1.0](https://github.com/alichtman/shallow-backup/tree/v1.0) (2018-05-14)
-
 [Full Changelog](https://github.com/alichtman/shallow-backup/compare/v0.4...v1.0)
 
 **Closed issues:**
@@ -322,9 +404,6 @@
 - Coverage for other package managers [\#2](https://github.com/alichtman/shallow-backup/issues/2)
 
 ## [v0.4](https://github.com/alichtman/shallow-backup/tree/v0.4) (2018-04-14)
-
-[Full Changelog](https://github.com/alichtman/shallow-backup/compare/7c53c198f405828e6f1f0c4edf477b209b840fab...v0.4)
-
 **Closed issues:**
 
 - uninstall option [\#17](https://github.com/alichtman/shallow-backup/issues/17)
@@ -343,4 +422,4 @@
 
 
 
-\* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*
+\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
